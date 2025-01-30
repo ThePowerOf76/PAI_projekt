@@ -1,0 +1,96 @@
+
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-image: linear-gradient(to bottom, #0d031c, #240244);
+}
+main {
+    background-color: #0d031c;
+    
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: VCR;
+}
+main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.main_options {
+    display: flex;
+    justify-content: space-around;
+}
+.pick_options {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.pick_options select {
+    width: 100%;
+}
+.pick_center {
+    display: flex;
+    flex-flow: column;
+    width: 200px;
+}
+.edit_options {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.edit_options form {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+#background_pick {
+    display: flex;
+    flex-flow: row;
+    height: 58px;
+}
+fieldset {
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px;
+    
+}
+button,
+input[type="submit"] {
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    font-family: VCR;
+}
+
+button:enabled,
+input[type="submit"]:enabled {
+    background-color: #f3aa91;
+
+}
+button:enabled:hover,
+input[type="submit"]:enabled:hover {
+    background-color: #c96f52;
+}
+button:disabled,
+input[type="submit"]:disabled {
+    background-color: #555555; 
+}
+label,
+fieldset {
+    color: #FBFFF1;
+    font-family: VCR;
+}
+select {
+    font-family: VCR;
+    
+}
+ 

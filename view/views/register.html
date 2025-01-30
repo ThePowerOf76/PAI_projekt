@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/CSS/general.css" />
+    <link rel="stylesheet" href="/static/CSS/login.css" />
+    <script src="/static/script/banner.js"></script>
+  </head>
+  <body>
+    {{template "templates/menu" .}}
+    <main>
+      <div id="redirectbanner">
+        <p>{{.RedirectBanner}}</p>
+      </div>
+      <h1>Zarejestruj się</h1>
+      <form action="/register" method="post">
+        <label for="username">Nazwa</label>
+        <input type="text" name="username" placeholder="Username" />
+        <label for="password">Hasło</label>
+        <input type="password" name="password" placeholder="Password" />
+        <input type="submit" value="Zarejestruj się" />
+      </form>
+    </main>
+  </body>
+</html>

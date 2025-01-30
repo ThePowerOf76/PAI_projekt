@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/static/script/customise.js"></script>
+    <link rel="stylesheet" href="/static/CSS/general.css" />
+    <link rel="stylesheet" href="/static/CSS/customise.css" />
+    <title>Ustawienia</title>
+  </head>
+
+  <body>
+    {{template "templates/menu" .}}
+    <main>
+      <h1>Ustawienia</h1>
+      <div class="main_options">
+        <button type="button" id="newP" onclick="newProfile()">
+          Nowy profil
+        </button>
+        <button type="button" id="pickP" onclick="pickProfileForm()">
+          Wybierz profil
+        </button>
+        <button type="button" id="editP" onclick="editProfileForm()">
+          Edytuj profil
+        </button>
+        <button type="button" id="delP" onclick="delProfileForm()">
+          Usuń profil
+        </button>
+      </div>
+      <div class="pick_options">
+        <div class="pick_center">
+          <form
+            id="all_profiles"
+            name="all_profiles"
+            onsubmit="return false"
+            hidden
+          >
+            <select name="profiles" id="profiles"></select>
+            <input id="subm" type="submit" value="" />
+          </form>
+        </div>
+      </div>
+      <div class="edit_options">
+        <form name="profile" hidden>
+          <fieldset>
+            <legend>Ustawienia gracza</legend>
+            <div>
+              <input type="number" name="pid" id="pid" readonly hidden />
+              <label>Nick: </label><br />
+              <input
+                name="name"
+                id="name"
+                type="text"
+                placeholder="Podaj nazwe profilu:"
+                required
+              /><br />
+              <label>Kursor:</label><br />
+              <label for="classic"
+                ><img src="/static/media/classic.png" alt="Klasycznie" /></label
+              ><br />
+              <input
+                type="radio"
+                name="cursor"
+                id="classic"
+                required
+                value="classic"
+              /><br />
+              <label for="sharp"
+                ><img
+                  src="/static/media/sharp.png"
+                  alt="Dla lubiących współczesne podejście" /></label
+              ><br />
+              <input
+                type="radio"
+                name="cursor"
+                id="sharp"
+                required
+                value="sharp"
+              /><br />
+              <label for="time"
+                ><img
+                  src="/static/media/time.png"
+                  alt="Dla lubiących czekać" /></label
+              ><br />
+              <input
+                type="radio"
+                name="cursor"
+                id="time"
+                required
+                value="time"
+              /><br />
+              <label for="bg">Tło</label><br />
+              <div id="background_pick">
+                <select
+                  name="bg"
+                  id="bg"
+                  required
+                  onchange="bgChange()"
+                  size="3"
+                >
+                  <option value="colour">Jednokolorowe</option>
+                  <option value="static">Statyczne</option>
+                  <option value="animated">Animowane</option></select
+                ><br />
+                <select name="sbg" id="sbg" required disabled hidden size="3">
+                  <option value="windows">Windows</option>
+                  <option value="space">Kosmos</option>
+                  <option value="nebula">Mgławica</option>
+                </select>
+                <select name="dbg" id="dbg" required disabled hidden size="3">
+                  <option value="matrix">Matrix</option>
+                  <option value="blackhole">Czarna Dziura</option>
+                  <option value="static">Szum</option>
+                </select>
+                <input type="color" name="cbg" id="cbg" /><br />
+              </div>
+              <label for="player">Kolor gracza:</label><br />
+              <input type="color" name="player" id="player" /><br />
+              <label for="powerup">Kolor specjalny:</label><br />
+              <input type="color" name="powerup" id="powerup" /><br />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Ustawienia gry</legend>
+            <div>
+              <label for="segments">Ilość segmentów</label><br />
+              <input
+                type="number"
+                name="segments"
+                id="segments"
+                min="5"
+                max="50"
+                value="30"
+              /><br />
+              <label for="music">Muzyka</label><br />
+              <input type="checkbox" name="music" id="music" /><br />
+              <label for="sfx">Efekty dźwiękowe</label><br />
+              <input type="checkbox" name="sfx" id="sfx" /><br />
+            </div>
+          </fieldset>
+          <input type="submit" value="Zatwierdź" />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Strona oraz grafika - Adam Brzęk. Muzyka - DM Dokuro</p>
+    </footer>
+  </body>
+</html>

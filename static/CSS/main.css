@@ -1,0 +1,64 @@
+body {
+    background-image: url("../media/mainbg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #240244;
+}
+h2 {
+    color: #cccccc;
+    text-shadow: 0 0 3px #000000;
+    font-family: Jersey;
+    font-size: 4vw;
+    text-align: center;
+    width: 90%;
+    height: 40%;
+}
+#c_profile {
+    color: rgb(255, 255, 255);
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-family: Jersey;
+    font-size: 3vw;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+input[type="submit"] {
+    border: none;
+    color: white;
+    text-align: center;
+    height: 3em;
+    width: 6em;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-family: VCR;
+    text-wrap: wrap;
+}
+input:enabled[type="submit"] {
+    background-color: #0db813;
+}
+input:enabled[type="submit"]:hover {
+    background-color: #09800d;
+}
+input:disabled[type="submit"] {
+    background-color: #555555;
+}

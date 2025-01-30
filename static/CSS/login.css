@@ -1,0 +1,66 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-image: linear-gradient(to bottom, #0d031c, #0d031c);
+}
+main {
+    background-color: #0d031c;
+}
+h1,
+h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: VCR;
+}
+main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+#redirectbanner {
+    background-image: linear-gradient(to right, #800808, #c20e0e);
+    p {
+        text-align: center;
+    }
+}
+#loginpanel {
+    width: 20%;
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+label {
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+input[type="submit"] {
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    font-family: VCR;
+    background-color: #f3aa91;
+}
+#reglink {
+    background-color: #f3aa91;
+    box-sizing: border-box;
+    height: 80%;
+    margin: 5px;
+    width: 200px;
+    padding: 5% 0px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+}
+#reglink:hover,
+input[type="submit"]:hover {
+    background-color: #c96f52;
+}

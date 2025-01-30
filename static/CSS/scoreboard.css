@@ -1,0 +1,55 @@
+body {
+    background-image: linear-gradient(to bottom, #0d031c, #240244);
+
+}
+main {
+    background: inherit;
+}
+#scoreboard {
+    background-color: inherit;
+    display: flex;
+    color: rgb(255, 30, 30);
+    margin-top: 0;
+    flex-direction: column;
+}
+
+img {
+    width: 34px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+}
+#scoreboard {
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 90vh;
+}
+.score {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    height: 35px;
+    min-width: 15%;
+    margin: 5px;
+    background: linear-gradient(180deg, #7e05ee 0%, #2d0a61 14%, #2d0a61 86%, #7e05ee 100%);
+    font-family: VCR;
+}
+p {
+    box-sizing: border-box;
+    padding-right: 10px;
+    font-family: VCR;
+}
+@media screen and (max-width: 768px) {
+    main {
+        margin-top: 138px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin-top: 70px;
+    }
+
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wielki Pożeracz Kursorów</title>
+    <script src="/static/script/main.js"></script>
+    <link rel="stylesheet" href="/static/CSS/general.css" />
+    <link rel="stylesheet" href="/static/CSS/main.css" />
+  </head>
+  <body>
+    {{template "templates/menu" .}}
+    <main>
+      <h2>Wielki Pożeracz Kursorów</h2>
+      <form action="/l/game">
+        <input type="submit" value="Walcz!" id="fight" disabled />
+      </form>
+      <p id="c_profile"></p>
+    </main>
+    <footer>
+      <p>Strona oraz grafika - Adam Brzęk. Muzyka - DM Dokuro</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+@font-face {
+    font-family: Jersey;
+    src: url("fonts/Jersey15-Regular.ttf");
+}
+@font-face {
+    font-family: VCR;
+    src: url("fonts/VCR_OSD_MONO_1.001.ttf");
+}
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+    top: 0;
+}
+nav {
+    background-image: linear-gradient(to top, #0d031c, #240244);
+    margin: 0;
+}
+nav ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+
+    justify-content: center;
+}
+
+nav ul li {
+    background-color: #f3aa91;
+    box-sizing: border-box;
+    height: 80%;
+    margin: 5px;
+    width: 200px;
+    display: flex;
+    align-items: stretch;
+    border-radius: 10px 10px 10px 10px;
+}
+
+nav ul li:hover {
+    background-color: #c96f52;
+}
+a {
+    color: #3b3b3b;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 9%;
+    font-family: VCR;
+}
+p {
+    color: #fbfff1;
+}
+#login {
+    background-color: #0db813;
+}
+#login:hover {
+    background-color: ##09800d;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+footer p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        height: 70px;
+    }
+    nav ul {
+        flex-flow: row wrap;
+        height: 100%;
+    }
+}
